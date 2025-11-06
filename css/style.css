@@ -1,0 +1,478 @@
+/* carousel css*/
+.carousel-caption1{
+    position: absolute;
+    right: 15%;
+    /* top: 2rem; */
+    bottom: 14.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.c1 h1{
+    font-family: "Pacifico", cursive;
+    font-size: 65px;
+}
+.carousel img{
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  object-position: center;
+}
+.carousel-caption1 p{
+  font-size: 25px;
+}
+/* navbar css */
+.navbar-nav{
+  font-size: 20px;
+  font-weight: 400;
+
+}
+.nav-item a{
+  color: #fff !important;
+}
+@media (max-width: 991.98px){
+  .navbar.bg-transparent {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    backdrop-filter: blur(10px);
+  }
+}
+@media (min-width: 375px) and (max-width: 576px) {
+  .carousel-caption1 {
+    position: absolute;
+    right: 15%;
+    bottom: 14.25rem;
+  }
+
+  .c1 h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 38px;
+  }
+
+  .carousel-caption1 p {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+  .carousel-caption1 {
+    position: absolute;
+    right: 15%;
+    bottom: 17.25rem;
+  }
+
+  .c1 h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+  }
+
+  .carousel-caption1 p {
+    font-size: 17px;
+  }
+}
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: rgb(255 255 255);
+    background-color: rgba(234, 234, 234, 0.196);
+    border: var(--bs-border-width) solid rgb(255 255 255);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+.navbar-toggler-icon {
+  color: #fff !important;
+}
+.logo-carousel {
+  overflow: hidden;
+  padding: 20px 0;
+  background-image: url(../images/dish1.jpg);
+  background-size: cover;
+}
+
+.logo-track {
+  display: flex;
+  width: calc(500px * 8); /* Adjust based on logos */
+  animation: scroll 20s linear infinite;
+}
+
+.logo-slide {
+  flex: 0 0 auto;
+  width: 500px;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-slide img {
+  max-width: 100%;
+  height: 350px;
+  filter: grayscale(0%);
+  transition: filter 0.3s;
+}
+
+.logo-slide img:hover {
+  filter: grayscale(100%);
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.dishes{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 20px 0 0 0;
+}
+.dishes h2{
+  font-size: 50px;
+}
+.a1 .row img{
+  width: 605px;
+  height: 400px;
+  filter: grayscale(0%);
+}
+.a1 .row img:hover{
+  filter: grayscale(100%);
+}
+.a1 h2{
+  font-family: "Pacifico", cursive;
+  font-size: 70px;
+  color: #fff;
+}
+section{
+  padding: 20px 0;
+}
+.a1 .a2{
+  padding: 50px 20px;
+}
+.about{
+  background: linear-gradient(#00000098, #00000098),url(../images/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;       /* makes image fill the section */
+  background-position: center;  /* centers the image */
+  color: #fff;
+}
+.btn-read a{
+  font-size: 17px;
+  font-weight: 410;
+}
+.navbar {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  z-index: 1000; /* keep it above the slider */
+}
+.carousel,
+.slider {
+  margin-top: 0; /* remove any top gap */
+}
+.colu {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; /* optional for hover effect */
+}
+
+.colu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0); /* initially transparent */
+  transition: background 0.3s ease; /* smooth transition */
+  z-index: 0; /* behind text */
+}
+
+.colu h3{
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.colu .btn {
+  position: relative;
+  z-index: 1;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.colu:hover::before {
+  background: rgba(0, 0, 0, 0.5); /* black overlay appears on hover */
+}
+.size img{
+  width: 550px;
+}
+.size h1{
+  font-family: "Pacifico", cursive;
+  margin-bottom: 35px;
+}
+.size p{
+  font-family:Arial, Helvetica, sans-serif;
+  margin-bottom: 35px;
+}
+.size .f{
+  width: 400px;
+  height: 70px;
+}
+.size .ff{
+  width: 400px;
+  height: 70px;
+}
+
+/* Make all images responsive from 1024px and below */
+@media (max-width: 1024px) {
+  .size img,
+  .size .f,
+  .size .ff {
+    width: 100%;        /* Take full container width */
+    max-width: 550px;   /* Prevent getting too big */
+    height: auto;       /* Keep aspect ratio */
+    display: block;     /* Prevent inline spacing issues */
+    margin: 0 auto;     /* Center them */
+  }
+}
+.justify-text{
+  text-align: justify;
+}
+.breadcrumb-container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+    .overly1{
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .breadcrumb-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    nav.breadcrumb-nav {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* center horizontally & vertically */
+      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark background */
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .breadcrumb {
+      margin: 0;
+    }
+
+    .breadcrumb-item a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .breadcrumb-item.active {
+      color: #f8f9fa; /* slightly lighter for active item */
+    }
+    .image-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .parall {
+      background-image: url('../images/banners/slide2.jpg');
+      min-height: 50vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-attachment: scroll;
+    }
+    @media (min-width: 992px) {
+      .parall {
+        background-attachment: fixed;
+      }
+    }
+    .parall1 {
+      padding: 100px 20px;
+      background-color: white;
+      text-align: center;
+      position: relative;
+    }
+    .parall1 h2{
+      font-family: "Pacifico", cursive;
+      margin-bottom: 25px;
+    }
+    .parall1 p{
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 20px;
+    }
+    .main1{
+      position: relative;
+      overflow: hidden;
+    }
+    .above-img {
+      position: absolute;
+      top: 197px; /* sits between the first .parall and .parall1 */
+      left: 78%;
+      transform: translateX(-50%);
+      width: 297px; /* adjust as needed */
+      z-index: 10;
+    }
+    .above-img1 {
+    position: absolute;
+    bottom: 207px;
+    left: 4%;
+    width: 354px;
+    z-index: 10;
+}
+@media (min-width: 325px) and (max-width: 768px) {
+  .above-img {
+    position: absolute;
+    top: 250px;
+    left: 74%;
+    transform: translateX(-50%);
+    width: 177px;
+    z-index: 10;
+}
+.above-img1 {
+    position: absolute;
+    bottom: 279px;
+    left: 4%;
+    width: 205px;
+    z-index: 10;
+}
+}
+.form-container {
+  width: 100%;           /* Default width for small screens */
+  max-width: 700px;     /* Don’t stretch too wide on large screens */
+  margin: 40px auto;    /* Center horizontally */
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.form-form{
+  background-image: url(../images/dish1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.h{
+  height: 55vh;
+  position: relative;
+}
+.h h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: #fff;         /* make text white */
+  font-size: 3rem;     /* adjust for visibility */
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .h h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 425px) and (max-width: 375px) {
+  .h h1 {
+    font-size: 1.5rem;
+  }
+}
+.contact a{
+  text-decoration: none;
+  color: #000;
+}
+.contact{
+  font-size: 20px;
+  padding: 70px 0px;
+}
+.image-conta {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-conta img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  /* Overlay initially hidden */
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* black transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .overlay-text1 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  /* Hover effects */
+  .image-conta:hover img {
+    transform: scale(1.1); /* zoom effect */
+  }
+
+  .image-conta:hover .overlay1 {
+    opacity: 1; /* show overlay on hover */
+  }
+  .mt-nature1{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .img-contai{
+    height: 700px !important;
+  }
+  .img-contai1{
+    height: 350px !important;
+  }
+  .img-contai2{
+    height: 450px !important;
+  }
+  .img-contai11{
+    height: 350px !important;
+  }
+  html, body {
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: 'Pacifico';
+  src: url('../fonts/pacificio.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* ensures text is visible while loading */
+}
